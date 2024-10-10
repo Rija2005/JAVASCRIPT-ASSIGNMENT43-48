@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Question no1 -->
+
+    <a href="#" id="myLink">Click me!</a>
+<!--QUESTION NO2-->
+<h1>Mobile Phone Lookup</h1>
+    
+    <div class="mobile-images">
+        <!-- Mobile item with image and name -->
+        <div class="mobile-item">
+            <img src="images/iphone6plus.gif" alt="Mobile 1" data-name="Iphone6Plus">
+            <div class="mobile-name">Iphone6Plus</div>
+        </div>
+        <div class="mobile-item">
+            <img src="images/galaxy_s6_edge_.gif" alt="Mobile 2" data-name="Galaxy S6Edge">
+            <div class="mobile-name">Galaxy S6Edge</div>
+        </div>
+        <div class="mobile-item">
+            <img src="images/v10.webp" alt="Mobile 3" data-name="V10">
+            <div class="mobile-name">V10</div>
+        </div>
+        <div class="mobile-item">
+            <img src="images/Huawei-P8.jpg" alt="Mobile 4" data-name="Huawei-P8">
+            <div class="mobile-name">Huawei-P8</div>
+        </div>
+    </div>
+<!--QUESTION NO3-->
+<h2>Student Records</h2>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>Jhone</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Emily</td>
+        <td>11</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>David</td>
+        <td>12</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Sophia</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Lucas</td>
+        <td>11</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Isabella</td>
+        <td>12</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Michael</td>
+        <td>11</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Alice</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Liam</td>
+        <td>12</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+<!--QUESTION NO4-->
+<h2>Hover over the image to change it</h2>
+
+<!-- Image with mouseover and mouseout events -->
+<img 
+  id="image" 
+  src="images/car.jfif" 
+  alt="Image 1"
+  width="300"
+  height="200"
+  onmouseover="changeImage()"
+  onmouseout="resetImage()"
+/>
+
+<!--QUESTION NO5-->
+<div class="counter-container">
+    <h2>Counter</h2>
+    <div id="counterValue">0</div>  <!-- Initial counter value set to 0 -->
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
